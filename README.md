@@ -29,7 +29,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](https://github.com/klimanovakateryna/gifplace3/blob/main/chrome-capture-2025-3-15.gif?raw=true)
+![Video Walkthrough](https://github.com/klimanovakateryna/gif-place3/blob/main/chrome-capture-2025-4-5.gif?raw=true)
 
 GIF created with Chrome Capture
 
