@@ -8,20 +8,18 @@ function App() {
   const [filterType, setFilterType] = useState('');
 
   useEffect(() => {
-    const fetchAllBreweries = async () => {
-      let page = 1;
-      let allBreweries = [];
-      while (true) {
-        const response = await fetch(`https://api.openbrewerydb.org/v1/breweries?per_page=50&page=${page}`);
+    const fetchBreweries = async () => {
+      try {
+        const response = await fetch('https://api.openbrewerydb.org/v1/breweries?per_page=30');
         const data = await response.json();
-        if (data.length === 0) break;
-        allBreweries = allBreweries.concat(data);
-        page++;
+        setBreweries(data);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching breweries:', error);
+        setLoading(false);
       }
-      setBreweries(allBreweries);
-      setLoading(false);
     };
-    fetchAllBreweries();
+    fetchBreweries();
   }, []);
 
   const filteredBreweries = breweries.filter(brewery => {
