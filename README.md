@@ -27,7 +27,7 @@ The following **required** functionality is completed:
 Here's a walkthrough of implemented user stories:
 
 
-![Video Walkthrough](![image](https://github.com/user-attachments/assets/a20d47d0-4d1b-4bd6-af2c-c1cc6e8e5116)
+![Video Walkthrough](https://github.com/klimanovakateryna/gifplace5/blob/main/chrome-capture-2025-4-12.gif?raw=true)
 )
 GIF created with **Chrome Capture** 
 
