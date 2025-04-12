@@ -1,13 +1,12 @@
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   font-family: 'Arial', sans-serif;
-  background-color: #FFA500; 
+  background-color: #FFA500;
 }
-
 
 .dashboard {
   display: flex;
@@ -24,31 +23,26 @@ html, body {
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
 }
 
 .sidebar-logo h2 {
   margin: 0;
   margin-bottom: 20px;
-  font-size: 1.8rem;
 }
 
 .sidebar nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .sidebar nav ul li {
   margin: 15px 0;
-  cursor: pointer;
-  transition: color 0.3s ease;
 }
 
-.sidebar nav ul li:hover {
-  color: #FF8C00;
+.sidebar-link {
+  text-decoration: none;
+  color: inherit;
 }
-
 
 .main-content {
   flex: 1;
@@ -56,24 +50,15 @@ html, body {
   padding: 20px;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
-  box-sizing: border-box;
 }
 
-
-.block {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
-  padding: 20px;
+.header {
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .stats-cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
 }
@@ -85,28 +70,13 @@ html, body {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
-
-.stat-card h2 {
-  margin: 0;
-  font-size: 2.2rem;
-  color: #333;
-}
-
-.stat-card p {
-  margin: 8px 0 0 0;
-  font-weight: bold;
-  color: #555;
-}
-
 
 .controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
   margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 .search-input,
@@ -115,41 +85,70 @@ html, body {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.9);
   flex: 1;
   min-width: 200px;
 }
 
-/* Brewery list: one card per row */
+/* Two-column layout: left for brewery list, right for charts */
+.columns-container {
+  display: flex;
+  align-items: flex-start;   /* Align columns at the top */
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Left column: stacked list */
+.list-column {
+  flex: 0 0 55%;   /* Adjust width as desired */
+}
+
 .brewery-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+}
+
+.brewery-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .brewery-card {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Right column: charts pinned to the top-right */
+.charts-column {
+  flex: 0 0 40%;   /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto; /* ensures it stays on the far right */
+}
+
+.chart-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.brewery-card h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.brewery-card p {
-  margin: 5px 0;
-  color: #555;
-}
-
 
 .loading {
   font-size: 18px;
   color: #333;
   text-align: center;
   padding: 20px;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #007BFF;
+  margin-bottom: 20px;
+  display: inline-block;
 }
