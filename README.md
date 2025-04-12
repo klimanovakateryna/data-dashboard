@@ -28,7 +28,6 @@ Here's a walkthrough of implemented user stories:
 
 
 ![Video Walkthrough](https://github.com/klimanovakateryna/gifplace5/blob/main/chrome-capture-2025-4-12.gif?raw=true)
-)
 GIF created with **Chrome Capture** 
 
 
