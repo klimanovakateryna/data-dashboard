@@ -26,9 +26,10 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with ...  
+![Video Walkthrough](https://github.com/klimanovakateryna/gif_community_place/blob/main/Community-board-walkthrough.gif?raw=true)
+GIF created with **Chrome Capture** 
+
 
 ## License
 
