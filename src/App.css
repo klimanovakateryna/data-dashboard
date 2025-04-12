@@ -89,18 +89,16 @@ body {
   min-width: 200px;
 }
 
-/* Two-column layout: left for brewery list, right for charts */
 .columns-container {
   display: flex;
-  align-items: flex-start;   /* Align columns at the top */
+  align-items: flex-start; 
   justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
 }
 
-/* Left column: stacked list */
 .list-column {
-  flex: 0 0 55%;   /* Adjust width as desired */
+  flex: 0 0 55%;
 }
 
 .brewery-list {
@@ -123,13 +121,12 @@ body {
   cursor: pointer;
 }
 
-/* Right column: charts pinned to the top-right */
 .charts-column {
-  flex: 0 0 40%;   /* Adjust width as needed */
+  flex: 0 0 40%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-left: auto; /* ensures it stays on the far right */
+  margin-left: auto;
 }
 
 .chart-card {
