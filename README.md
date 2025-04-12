@@ -1,49 +1,40 @@
-# Web Development Project 5 - *Data Dashboard*
+# Web Development Project 6 - *Brewery Dashboard*
 
-Submitted by:  **Kateryna Klimanova**
+Submitted by: **Kateryna Klimanova**
 
-This web app: This Brewery Dashboard fetches 30 breweries from the Open Brewery DB API and displays them in detailed cards with summary statistics and dynamic search and filter features.
+This web app: **The Brewery Dashboard fetches data from the Open Brewery DB API and displays a dynamic list of brewery items.**
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
-<<<<<<< HEAD
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# data-dashboard2
-=======
 The following **required** functionality is completed:
 
-- [x] **The site has a dashboard displaying a list of data fetched using an API call**
-  - The dashboard should display at least 10 unique items, one per row
-  - The dashboard includes at least two features in each row
-- [x] **`useEffect` React hook and `async`/`await` are used**
-- [x] **The app dashboard includes at least three summary statistics about the data** 
-  - The app dashboard includes at least three summary statistics about the data, such as:
-    - Total Breweries, Most Common Types, Unique States 
-- [x] **A search bar allows the user to search for an item in the fetched data**
-  - The search bar **correctly** filters items in the list, only displaying items matching the search query
-  - The list of results dynamically updates as the user types into the search bar
-- [x] **An additional filter allows the user to restrict displayed items by specified categories**
-  - The filter restricts items in the list using a **different attribute** than the search bar 
-  - The filter **correctly** filters items in the list, only displaying items matching the filter attribute in the dashboard
-  - The dashboard list dynamically updates as the user adjusts the filter
+- [x] **Clicking on an item in the list view displays more details about it**
+  - Clicking on an item in the dashboard list navigates to a detail view for that item
+  - Detail view includes extra information about the item not included in the dashboard view
+  - The same sidebar is displayed in detail view as in dashboard view
+  - *To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording.*
+- [x] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+  -  *To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording.*
+- [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - At least two charts should be incorporated into the dashboard view of the site
+  - Each chart should describe a different aspect of the dataset
+
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](https://github.com/klimanovakateryna/gif-place3/blob/main/chrome-capture-2025-4-5.gif?raw=true)
 
-GIF created with Chrome Capture
+![Video Walkthrough](https://github.com/klimanovakateryna/gifplace5/blob/main/chrome-capture-2025-4-12.gif?raw=true)
+)
+GIF created with **Chrome Capture** 
 
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright 2015 Kateryna Klimanova
+    Copyright 2025 Kateryna Klimanova
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -56,4 +47,3 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
->>>>>>> 0310818ee9f095d25f838fa7ba606d31b4241ba8
