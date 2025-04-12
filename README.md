@@ -27,7 +27,8 @@ The following **required** functionality is completed:
 Here's a walkthrough of implemented user stories:
 
 
-![Video Walkthrough](https://github.com/klimanovakateryna/gif_community_place/blob/main/Community-board-walkthrough.gif?raw=true)
+![Video Walkthrough](![image](https://github.com/user-attachments/assets/a20d47d0-4d1b-4bd6-af2c-c1cc6e8e5116)
+)
 GIF created with **Chrome Capture** 
 
 
